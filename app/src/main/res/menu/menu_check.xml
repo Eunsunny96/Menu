@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/submenu"
+        android:title="@string/app_explain"> <!--strings.xml 참조-->
+        <menu> <!--하위메뉴-->
+            <group
+                android:id="@+id/check_group"
+                android:checkableBehavior="all"> <!--체크박스, 메뉴그룹-->
+                <item
+                    android:id="@+id/bigfont"
+                    android:title="BigFont" />
+            </group>
+            <group
+                android:id="@+id/check_group2"
+                android:checkableBehavior="single"> <!--라디오버튼-->
+                <item
+                    android:id="@+id/red"
+                    android:checked="true"
+                    android:title="Red" /> <!--체크상태-->
+                <item
+                    android:id="@+id/green"
+                    android:title="Green" />
+                <item
+                    android:id="@+id/blue"
+                    android:title="Blue" />
+            </group>
+        </menu>
+    </item>
+</menu>
